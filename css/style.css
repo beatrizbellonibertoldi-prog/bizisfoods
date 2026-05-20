@@ -889,3 +889,34 @@ header > p {
     .hero-banner { padding: 28px 16px; }
     .hero-content h2 { font-size: 1.2rem; }
 }
+/* ─── SELO ESPECIAL DA SEMANA ───────────────── */
+.especial-semana {
+    position: relative;
+    overflow: hidden;
+}
+
+.especial-badge {
+    position: absolute;
+    top: 16px;
+    left: -35px;
+    background: linear-gradient(135deg, #FF8C42, #FFB347);
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 6px 40px;
+    transform: rotate(-45deg);
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .especial-badge {
+        font-size: 0.6rem;
+        padding: 4px 35px;
+        top: 12px;
+        left: -40px;
+    }
+}
+
